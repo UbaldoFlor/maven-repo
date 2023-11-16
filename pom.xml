@@ -83,7 +83,7 @@
           <version>3.0.0</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
+          <groupId>org.apache.maven.archetypes</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <version>3.4.1-SNAPSHOT</version>
           <configuration>
