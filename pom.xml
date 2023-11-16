@@ -8,6 +8,8 @@
   <artifactId>maven-archetype-quickstart</artifactId>
   <version>1.4</version>
 
+  <packaging>war</packaging>
+  
   <name>maven-archetype-quickstart</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
