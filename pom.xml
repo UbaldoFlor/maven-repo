@@ -33,7 +33,7 @@
             <version>2.5</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.maven.plugins</groupId>
+      <groupId>org.apache.maven.archetypes</groupId>
       <artifactId>maven-war-plugin</artifactId>
       <version>3.4.1-SNAPSHOT</version>
       <type>maven-plugin</type>
