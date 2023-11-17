@@ -1,14 +1,14 @@
 pipeline{
   agent any
-  options{
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  }
   stages{
-    stage('Scan'){
+    stage('Clone code'){
       steps{
-        withSonarQubeEnv(installationName: 'sonarqubeserver'){
-          sh './mvnw clean sonar:sonar'
-        }
+        git url: 'https://github.com/UbaldoFlor/maven-repo.git'
+      }
+    }
+    stage('Build code'){
+      steps{
+        sh "mvn clean package"
       }
     }
   }
