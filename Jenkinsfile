@@ -13,5 +13,12 @@ pipeline {
       }
     }
 
+    stage('Analyze code') {
+      steps {
+        withSonarQubeEnv 'SonarQube Scanner'
+        jacoco()
+      }
+    }
+
   }
 }
